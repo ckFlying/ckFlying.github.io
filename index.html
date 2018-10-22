@@ -456,6 +456,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/jq/2018/10/22/asd/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ckFlying">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/jq/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JieQi">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/jq/2018/10/22/asd/" itemprop="url">
+                  hexo搭建个人博客
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-10-22 10:48:05 / 修改时间：18:00:17" itemprop="dateCreated datePublished" datetime="2018-10-22T10:48:05+08:00">2018-10-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="hexo的安装（win版）"><a href="#hexo的安装（win版）" class="headerlink" title="hexo的安装（win版）"></a>hexo的安装（win版）</h2><ul>
+<li><p>安装准备</p>
+<ul>
+<li>安装<a href="https://git-scm.com/" target="_blank" rel="noopener">git</a></li>
+<li>安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+</ul>
+</li>
+<li><p>下载hexo</p>
+<blockquote>
+<p>打开git bash 输入<code>npm install -g hexo-cli</code>即可。可通过<code>hexo -v</code>查看版本</p>
+</blockquote>
+</li>
+<li>创建hexo的所需文件<blockquote>
+<p>在自己的所创文件下打开git bash ,输入<code>hexo init</code>即可。</p>
+<blockquote>
+<p><img src="https://ckflying.github.io/jq/images/ck.jpg" alt="文件img"></p>
+<blockquote>
+<p>其中\source_posts文件夹下是放用户写的的博客md文件的,用hexo需用<code>hexo new 文件名</code>来创建md，不能自己直接创建(会在页面显示上没有md文件的名称),在\themes下是放hexo的主题的，目前只有landscape主题，可去<a href="https://hexo.io/themes/" target="_blank" rel="noopener">hexo 主题</a>下载，本人较为喜欢next主题（嘿嘿）</p>
+<ul>
+<li>他的配置文件说明可看<a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">官网</a>,其中git上的配置官网上都有，若懒得看官网就看我下面的说明。</li>
+<li>写好你的文章后，在同一文件下打开git bash,输入<code>hexo g</code>生产html文件，<code>hexo s</code>会在本地生产服务器。</li>
+</ul>
+</blockquote>
+</blockquote>
+</blockquote>
+</li>
+<li><p>部署到git上</p>
+<ul>
+<li><p>在_config.xml上的末尾添加这些：注意github page要的分支为master或没有gh-pages，且git地址要是<code>用户名.github.io</code>其中.github.io是创建github page的要求我其他的试了不行反正是git上的也就不管了，否则站点无法发布。具体看<a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/" target="_blank" rel="noopener">官网说明</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: 你的git地址</span><br><span class="line">  brash: 你的git上传分支</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 git上创建github page(我按我的部署来简要说明)</p>
+<blockquote>
+<p>先create 一个Repository，然后create brash 为gh-pages,然后点击Settings，下面有一个GitHub Pages，其中Source下可以选择发布的站点，选择后保存即可，会出现<code>Your site is ready to be published at https://xxxxx.</code>。<a href="https://xxxxx即为访问地址。" target="_blank" rel="noopener">https://xxxxx即为访问地址。</a></p>
+</blockquote>
+</li>
+<li>然后在git bash 上输入<code>hexo d</code>会将生成的html等文件上传到guthub 上，到此博客建立完成。注更新博客时，github page上会有一定的延迟不会实时。</li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/jq/2018/08/23/wwj/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -763,7 +942,7 @@
                 
                   <a href="/jq/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -780,7 +959,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
